@@ -21,6 +21,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-neutral-cream/70">
               <p>📱 WhatsApp: <a href={`https://wa.me/${HOTEL_INFO.whatsapp.replace(/ /g, '').replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-hospitality-gold hover:underline">{HOTEL_INFO.whatsapp}</a></p>
               <p>☎️ Phone: <a href={`tel:${HOTEL_INFO.phone.replace(/ /g, '')}`} className="text-hospitality-gold hover:underline">{HOTEL_INFO.phone}</a></p>
+              <p>✉️ Email: <a href={`mailto:${HOTEL_INFO.email}`} className="text-hospitality-gold hover:underline">{HOTEL_INFO.email}</a></p>
             </div>
           </div>
         </div>

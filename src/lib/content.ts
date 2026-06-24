@@ -9,7 +9,7 @@ export const HOTEL_INFO = {
   // Contact
   phone: '+92 313 5802587',
   whatsapp: '+92 313 5802587',
-  email: 'Contact via WhatsApp or phone',
+  email: 'qasimshabbier@gmail.com',
   
   // Location
   location: {
@@ -24,7 +24,7 @@ export const HOTEL_INFO = {
     nearestCity: 'Peshawar (90 km)',
   },
   
-  // Rooms (8 total)
+  // Rooms (16 total)
   rooms: [
     {
       id: 1,
@@ -80,6 +80,62 @@ export const HOTEL_INFO = {
       name: 'Harmony Haven',
       description: 'Peaceful retreat with garden access',
       quote: '"The hospitality was beyond expectations."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 9,
+      name: 'Stone Path Lodge',
+      description: 'Traditional architecture with modern comfort',
+      quote: '"Authentic and welcoming beyond measure."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 10,
+      name: 'Eagle\'s Nest',
+      description: 'High altitude retreat with panoramic views',
+      quote: '"Feeling closer to the sky than ever before."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 11,
+      name: 'Valley Whispers',
+      description: 'Nestled in the heart of the mountains',
+      quote: '"Nature embracing you from every angle."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 12,
+      name: 'Pine Haven',
+      description: 'Surrounded by ancient pine forests',
+      quote: '"The scent of the mountains, the silence of peace."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 13,
+      name: 'Star Chamber',
+      description: 'Perfect for stargazing and meditation',
+      quote: '"Reconnecting with the universe felt natural here."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 14,
+      name: 'Horizon House',
+      description: 'Endless mountain views in every direction',
+      quote: '"Where earth meets sky, the soul finds peace."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 15,
+      name: 'Serenity Suite',
+      description: 'Designed for ultimate relaxation',
+      quote: '"Every moment here feels like meditation."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 16,
+      name: 'Heritage House',
+      description: 'Celebrates Pashtun cultural traditions',
+      quote: '"Living history with modern hospitality."',
       author: 'Verified Traveler',
     },
   ],
@@ -162,7 +218,7 @@ export const HOTEL_INFO = {
     },
     {
       year: '2026',
-      title: 'Still Only 8 Rooms',
+      title: 'Now 16 Rooms Strong',
       description: 'The commitment remains: depth over scale. Every room is a sanctuary. Every guest, a family member.',
     },
   ],
