@@ -1,0 +1,169 @@
+// Hotel Information
+export const HOTEL_INFO = {
+  name: 'Lab e Joo',
+  fullName: 'Lab E Jou Resorts',
+  tagline: 'Where Mountains Meet Hospitality',
+  founder: 'Khan Family',
+  description: 'A hidden gem in Jabbori, Pakistan. Authentic Pashtun hospitality in the Hindu Kush mountains.',
+  
+  // Contact
+  phone: '+92 313 5802587',
+  whatsapp: '+92 313 5802587',
+  email: 'Contact via WhatsApp or phone',
+  
+  // Location
+  location: {
+    town: 'Jabbori',
+    region: 'Khyber Pakhtunkhwa',
+    country: 'Pakistan',
+    latitude: 34.6051,
+    longitude: 73.2584,
+    mapPlusCode: 'J734+VPP',
+    elevation: '7,200 ft (2,195 m)',
+    distanceFromIslamabad: '75.9 miles (3 hours drive)',
+    nearestCity: 'Peshawar (90 km)',
+  },
+  
+  // Rooms (8 total)
+  rooms: [
+    {
+      id: 1,
+      name: "The Raven's Rest",
+      description: 'Named after a local legend',
+      quote: '"Great view and great newly constructed rooms, staff was very professional."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 2,
+      name: "Shepherd's Refuge",
+      description: 'Overlooks grazing lands',
+      quote: '"Not only is it just a three-hour drive from Islamabad, but it also boasts a more remarkable and pristine environment."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 3,
+      name: 'Woodsmoke & Quiet',
+      description: 'Minimalist, fireplace-focused',
+      quote: '"Clean environment, attractive views."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 4,
+      name: 'The Starwell',
+      description: 'Rooftop suite, minimal light pollution',
+      quote: '"The stars here are unreal. Worth every minute of the drive."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 5,
+      name: 'Summit View',
+      description: 'Panoramic mountain vistas',
+      quote: '"Waking up to these mountains is a spiritual experience."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 6,
+      name: 'Golden Dawn',
+      description: 'East-facing sunrise suite',
+      quote: '"Each sunrise was better than the last."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 7,
+      name: 'Mountain Whisper',
+      description: 'Intimate, valley-view room',
+      quote: '"I felt the world slow down here."',
+      author: 'Verified Traveler',
+    },
+    {
+      id: 8,
+      name: 'Harmony Haven',
+      description: 'Peaceful retreat with garden access',
+      quote: '"The hospitality was beyond expectations."',
+      author: 'Verified Traveler',
+    },
+  ],
+  
+  // Experiences
+  experiences: [
+    {
+      id: 1,
+      name: "Shepherd's Trail",
+      icon: '🥾',
+      duration: '4 hours',
+      difficulty: 'Moderate',
+      guide: 'Local mountain guide',
+      description: 'Hike ancient mountain paths. Learn about shepherding, see grazing lands, stop at a traditional shepherd camp.',
+      lat: 34.61,
+      lng: 73.26,
+    },
+    {
+      id: 2,
+      name: 'Jabbori Bazaar Walk',
+      icon: '🏘️',
+      duration: '2 hours',
+      difficulty: 'Easy',
+      guide: 'Local market vendor',
+      description: 'Explore the local bazaar. Learn traditional crafts, taste local honey, connect with villagers.',
+      lat: 34.605,
+      lng: 73.257,
+    },
+    {
+      id: 3,
+      name: 'Mountain Heritage Tour',
+      icon: '⛪',
+      duration: '1.5 hours',
+      difficulty: 'Easy',
+      guide: 'Village historian',
+      description: 'Visit historic sites. Hear stories of ancient kingdoms, mountain trade routes, and local legends.',
+      lat: 34.603,
+      lng: 73.262,
+    },
+    {
+      id: 4,
+      name: 'Traditional Cooking Class',
+      icon: '🍲',
+      duration: '3 hours',
+      difficulty: 'Easy',
+      guide: 'Local chef',
+      description: 'Cook traditional Pashtun meals. Learn recipes passed down for generations. Eat together, share stories.',
+      lat: 34.606,
+      lng: 73.258,
+    },
+    {
+      id: 5,
+      name: 'Golden Hour Photography',
+      icon: '📸',
+      duration: '2.5 hours',
+      difficulty: 'Moderate',
+      guide: 'Local photographer',
+      description: 'Sunset photography with a professional. Capture the mountains, learn composition, share chai as light fades.',
+      lat: 34.609,
+      lng: 73.260,
+    },
+  ],
+  
+  // Timeline
+  timeline: [
+    {
+      year: '2012',
+      title: 'Lab e Joo Founded',
+      description: 'The Khan Family founded Lab e Joo with a vision to share their mountain home while preserving Pashtun culture.',
+    },
+    {
+      year: '2015',
+      title: 'First International Guests Arrive',
+      description: 'Travelers from around the world discovered Lab e Joo, learning firsthand what melmastiya means.',
+    },
+    {
+      year: '2020',
+      title: 'Community Employment Program',
+      description: '12 local families now work at Lab e Joo, bringing authentic voices and stories to every guest interaction.',
+    },
+    {
+      year: '2026',
+      title: 'Still Only 8 Rooms',
+      description: 'The commitment remains: depth over scale. Every room is a sanctuary. Every guest, a family member.',
+    },
+  ],
+};
