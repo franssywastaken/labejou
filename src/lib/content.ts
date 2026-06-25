@@ -5,6 +5,7 @@ export const HOTEL_INFO = {
   tagline: 'Where Mountains Meet Hospitality',
   founder: 'Khan Family',
   description: 'A hidden gem in Jabbori, Pakistan. Authentic Pashtun hospitality in the Hindu Kush mountains.',
+  founded: 1972,
   
   // Contact
   phone: '+92 313 5802587',
@@ -166,17 +167,39 @@ export const HOTEL_INFO = {
     },
     {
       id: 3,
-      name: 'Mountain Heritage Tour',
-      icon: '⛪',
-      duration: '1.5 hours',
+      name: 'Mundi Village Tour',
+      icon: '🏞️',
+      duration: '3 hours',
       difficulty: 'Easy',
-      guide: 'Village historian',
-      description: 'Visit historic sites. Hear stories of ancient kingdoms, mountain trade routes, and local legends.',
-      lat: 34.603,
-      lng: 73.262,
+      guide: 'Local community guide',
+      description: 'Visit the neighboring Mundi village. Experience authentic village life, meet locals, taste traditional tea and snacks.',
+      lat: 34.615,
+      lng: 73.270,
     },
     {
       id: 4,
+      name: 'Bandagocha Expedition',
+      icon: '⛰️',
+      duration: '6 hours',
+      difficulty: 'Hard',
+      guide: 'Experienced mountain guide',
+      description: 'Trek to Bandagocha peak. Stunning panoramic views of the Hindu Kush range. Pack a full day adventure with lunch.',
+      lat: 34.625,
+      lng: 73.280,
+    },
+    {
+      id: 5,
+      name: 'Bridge Hiking Trail',
+      icon: '🌉',
+      duration: '2 hours',
+      difficulty: 'Easy',
+      guide: 'Hotel staff guide',
+      description: 'Scenic hike starting from the bridge next to the hotel. Cross the bridge and explore pristine mountain paths with breathtaking valley views.',
+      lat: 34.605,
+      lng: 73.258,
+    },
+    {
+      id: 6,
       name: 'Traditional Cooking Class',
       icon: '🍲',
       duration: '3 hours',
@@ -187,7 +210,7 @@ export const HOTEL_INFO = {
       lng: 73.258,
     },
     {
-      id: 5,
+      id: 7,
       name: 'Golden Hour Photography',
       icon: '📸',
       duration: '2.5 hours',
@@ -202,13 +225,18 @@ export const HOTEL_INFO = {
   // Timeline
   timeline: [
     {
-      year: '2012',
+      year: '1972',
       title: 'Lab e Joo Founded',
-      description: 'The Khan Family founded Lab e Joo with a vision to share their mountain home while preserving Pashtun culture.',
+      description: 'The Khan Family established Lab e Joo as a humble retreat, sharing their mountain home with travelers seeking authentic Pashtun hospitality.',
+    },
+    {
+      year: '1990s',
+      title: 'Growth & Preservation',
+      description: 'Over decades, Lab e Joo grew organically while maintaining its commitment to cultural authenticity and environmental respect.',
     },
     {
       year: '2015',
-      title: 'First International Guests Arrive',
+      title: 'International Recognition',
       description: 'Travelers from around the world discovered Lab e Joo, learning firsthand what melmastiya means.',
     },
     {

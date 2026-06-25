@@ -13,6 +13,7 @@ const Footer = () => {
               <p>🏔️ Elevation: {HOTEL_INFO.location.elevation}</p>
               <p>🚗 {HOTEL_INFO.location.distanceFromIslamabad}</p>
               <p>🌍 Nearest city: {HOTEL_INFO.location.nearestCity}</p>
+              <p>🏠 Operating since: {HOTEL_INFO.founded}</p>
             </div>
           </div>
 
@@ -33,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-sm text-neutral-cream/50 space-y-2">
-          <p>© 2026 {HOTEL_INFO.fullName}. All rights reserved.</p>
+          <p>© {HOTEL_INFO.founded}-{new Date().getFullYear()} {HOTEL_INFO.fullName}. All rights reserved.</p>
           <p>Preserving Jabbori. Welcoming the world.</p>
           <p>🏠 Founded by the {HOTEL_INFO.founder}</p>
         </div>

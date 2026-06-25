@@ -48,7 +48,7 @@ const About = () => {
             "Tourism should heal, not harm. Every guest leaves lighter. Every local grows richer—not just in money, but in stories."
           </p>
           <p className="text-lg font-serif">
-            Founded by the {HOTEL_INFO.founder}
+            Founded by the {HOTEL_INFO.founder} in {HOTEL_INFO.founded}
           </p>
         </div>
       </div>

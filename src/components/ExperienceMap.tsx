@@ -3,29 +3,40 @@
 import { useState } from 'react';
 import { Clock, Users } from 'lucide-react';
 import { HOTEL_INFO } from '@/lib/content';
+import InteractiveMap from './InteractiveMap';
 
 const ExperienceMap = () => {
   const [selectedExp, setSelectedExp] = useState<number | null>(null);
+  const [showMap, setShowMap] = useState(false);
 
   return (
     <section className="py-20 md:py-32 px-6 bg-neutral-cream">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-serif text-center text-mountain-dark mb-16">
-          Local Experiences
+        <h2 className="text-4xl md:text-5xl font-serif text-center text-mountain-dark mb-4">
+          🗺️ Local Experiences
         </h2>
+        <p className="text-center text-mountain-charcoal mb-8">
+          Explore Jabbori, Mundi, Bandagocha, and mountain trails
+        </p>
+
+        {/* Map Toggle Button */}
+        <div className="text-center mb-8">
+          <button
+            onClick={() => setShowMap(!showMap)}
+            className="bg-hospitality-orange text-white px-6 py-3 rounded-lg font-serif hover:bg-hospitality-gold transition-colors"
+          >
+            {showMap ? '📋 Show List' : '🗺️ View Interactive Map'}
+          </button>
+        </div>
+
+        {/* Interactive Map */}
+        {showMap && (
+          <div className="mb-12 rounded-lg overflow-hidden shadow-lg">
+            <InteractiveMap />
+          </div>
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Map placeholder */}
-          <div className="lg:col-span-2 relative bg-gray-200 rounded-lg overflow-hidden h-96 md:h-full min-h-96">
-            <div className="w-full h-full flex items-center justify-center text-center">
-              <div className="text-mountain-charcoal">
-                <p className="text-2xl font-serif mb-2">🗺️ Jabbori Region Map</p>
-                <p className="text-sm">{HOTEL_INFO.location.mapPlusCode}</p>
-                <p className="text-xs mt-2 text-gray-600">{HOTEL_INFO.location.latitude}° N, {HOTEL_INFO.location.longitude}° E</p>
-              </div>
-            </div>
-          </div>
-
           {/* Experience list */}
           <div className="lg:col-span-1 space-y-4 max-h-96 overflow-y-auto">
             {HOTEL_INFO.experiences.map((exp) => (
@@ -48,41 +59,45 @@ const ExperienceMap = () => {
               </button>
             ))}
           </div>
-        </div>
 
-        {/* Expanded experience detail */}
-        {selectedExp && (
-          <div className="mt-8 p-6 bg-white rounded-lg border-l-4 border-hospitality-orange animate-slide-up">
-            {HOTEL_INFO.experiences.map(
-              (exp) =>
-                exp.id === selectedExp && (
-                  <div key={exp.id}>
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="text-2xl font-serif text-mountain-dark">{exp.name}</h3>
-                      <span className="text-4xl">{exp.icon}</span>
-                    </div>
-                    <p className="text-mountain-charcoal mb-4">{exp.description}</p>
-                    <div className="grid grid-cols-3 gap-4 mb-6">
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-5 h-5 text-hospitality-orange" />
-                        <span className="text-sm">{exp.duration}</span>
+          {/* Experience details */}
+          <div className="lg:col-span-2">
+            {selectedExp ? (
+              HOTEL_INFO.experiences.map(
+                (exp) =>
+                  exp.id === selectedExp && (
+                    <div key={exp.id} className="p-6 bg-white rounded-lg border-l-4 border-hospitality-orange animate-slide-up">
+                      <div className="flex items-start justify-between mb-4">
+                        <h3 className="text-2xl font-serif text-mountain-dark">{exp.name}</h3>
+                        <span className="text-4xl">{exp.icon}</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Users className="w-5 h-5 text-hospitality-orange" />
-                        <span className="text-sm">{exp.difficulty}</span>
+                      <p className="text-mountain-charcoal mb-4">{exp.description}</p>
+                      <div className="grid grid-cols-3 gap-4 mb-6">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-5 h-5 text-hospitality-orange" />
+                          <span className="text-sm">{exp.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Users className="w-5 h-5 text-hospitality-orange" />
+                          <span className="text-sm">{exp.difficulty}</span>
+                        </div>
                       </div>
+                      <div className="bg-neutral-light p-4 rounded mb-6 italic">
+                        <p className="font-serif text-sm">👤 {exp.guide}</p>
+                      </div>
+                      <button className="w-full bg-hospitality-orange text-white py-3 rounded-lg font-serif hover:bg-hospitality-gold transition-colors">
+                        📅 Book This Experience
+                      </button>
                     </div>
-                    <div className="bg-neutral-light p-4 rounded mb-6 italic">
-                      <p className="font-serif text-sm">{exp.guide}</p>
-                    </div>
-                    <button className="w-full bg-hospitality-orange text-white py-3 rounded-lg font-serif hover:bg-hospitality-gold transition-colors">
-                      📅 Book This Experience
-                    </button>
-                  </div>
-                )
+                  )
+              )
+            ) : (
+              <div className="p-8 bg-white rounded-lg border-l-4 border-hospitality-orange text-center text-mountain-charcoal">
+                <p className="text-lg font-serif">👆 Select an experience to learn more</p>
+              </div>
             )}
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
