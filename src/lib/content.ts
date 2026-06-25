@@ -25,7 +25,7 @@ export const HOTEL_INFO = {
     nearestCity: 'Peshawar (90 km)',
   },
   
-  // Rooms (16 total)
+  // Rooms (16 total - 14 operational, 2 reserved)
   rooms: [
     {
       id: 1,
@@ -167,7 +167,7 @@ export const HOTEL_INFO = {
       category: 'Simple Deluxe',
       price: 6000,
       currency: 'PKR',
-      status: 'Unoperational',
+      status: 'Operational',
       description: 'East-facing sunrise suite',
       quote: '"Each sunrise was better than the last."',
       author: 'Verified Traveler',
@@ -178,7 +178,7 @@ export const HOTEL_INFO = {
       category: 'Simple Deluxe',
       price: 6000,
       currency: 'PKR',
-      status: 'Unoperational',
+      status: 'Operational',
       description: 'Intimate, valley-view room',
       quote: '"I felt the world slow down here."',
       author: 'Verified Traveler',
@@ -186,22 +186,22 @@ export const HOTEL_INFO = {
     {
       id: 15,
       name: 'Star Chamber',
-      category: 'Unoperational',
+      category: 'Reserved',
       price: null,
       currency: 'PKR',
-      status: 'Unoperational',
-      description: 'Perfect for stargazing and meditation - coming soon',
+      status: 'Reserved',
+      description: 'Perfect for stargazing and meditation',
       quote: '"Reconnecting with the universe felt natural here."',
       author: 'Verified Traveler',
     },
     {
       id: 16,
       name: 'Heritage House',
-      category: 'Unoperational',
+      category: 'Reserved',
       price: null,
       currency: 'PKR',
-      status: 'Unoperational',
-      description: 'Celebrates Pashtun cultural traditions - coming soon',
+      status: 'Reserved',
+      description: 'Celebrates Pashtun cultural traditions',
       quote: '"Living history with modern hospitality."',
       author: 'Verified Traveler',
     },
@@ -312,7 +312,7 @@ export const HOTEL_INFO = {
     },
     {
       year: '2026',
-      title: 'Now 10 Rooms Operational',
+      title: 'Now 14 Rooms Operational',
       description: 'The commitment remains: depth over scale. Every room is a sanctuary. Every guest, a family member.',
     },
   ],

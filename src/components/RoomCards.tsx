@@ -131,10 +131,10 @@ const RoomCards = () => {
           </div>
         </div>
 
-        {/* Scarcity message */}
+        {/* Call to action */}
         <div className="mt-12 p-8 bg-gradient-to-r from-hospitality-orange/20 to-hospitality-gold/20 border border-hospitality-orange/50 rounded-lg text-center">
           <p className="text-neutral-cream text-lg font-serif">
-            🏔️ 10 rooms currently operational. 6 more rooms coming soon.
+            🏔️ 14 rooms operational.
             <br />
             <span className="text-hospitality-gold">Book your authentic mountain experience today.</span>
           </p>
