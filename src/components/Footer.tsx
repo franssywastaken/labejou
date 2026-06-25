@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           <div>
-            <h3 className="font-serif text-2xl mb-6">{HOTEL_INFO.name}</h3>
+            <h3 className="font-serif text-2xl mb-6">🏔️ {HOTEL_INFO.name}</h3>
             <p className="text-neutral-cream/80 mb-4">{HOTEL_INFO.location.town}, {HOTEL_INFO.location.region}, {HOTEL_INFO.location.country}</p>
             <div className="space-y-3 text-sm text-neutral-cream/70">
               <p>📍 Map Plus Code: {HOTEL_INFO.location.mapPlusCode}</p>
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-neutral-cream/70">
               <p>📱 WhatsApp: <a href={`https://wa.me/${HOTEL_INFO.whatsapp.replace(/ /g, '').replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-hospitality-gold hover:underline">{HOTEL_INFO.whatsapp}</a></p>
               <p>☎️ Phone: <a href={`tel:${HOTEL_INFO.phone.replace(/ /g, '')}`} className="text-hospitality-gold hover:underline">{HOTEL_INFO.phone}</a></p>
-              <p>✉️ Email: <a href={`mailto:${HOTEL_INFO.email}`} className="text-hospitality-gold hover:underline">{HOTEL_INFO.email}</a></p>
+              <p>📧 Email: <a href={`mailto:${HOTEL_INFO.email}`} className="text-hospitality-gold hover:underline">{HOTEL_INFO.email}</a></p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="text-center text-sm text-neutral-cream/50 space-y-2">
           <p>© 2026 {HOTEL_INFO.fullName}. All rights reserved.</p>
           <p>Preserving Jabbori. Welcoming the world.</p>
-          <p>Founded by the {HOTEL_INFO.founder}</p>
+          <p>🏠 Founded by the {HOTEL_INFO.founder}</p>
         </div>
       </div>
     </footer>
